@@ -17,8 +17,8 @@ $scope.users = [];
 
 	//add user
 	$scope.addUser = function(){
-		var rowNo = $scope.users.length+1;
-		var userObj = {firstName:"firstName"+rowNo,lastName:"lastName"+rowNo, userName:'newUser'+rowNo,isEditable:false,userId:rowNo};
+		var sNo = $scope.users.length+1;
+		var userObj = {firstName:"firstName"+sNo,lastName:"lastName"+sNo, userName:'newUser'+sNo,isEditable:false,userId:sNo};
 
 		$http({
 			method:"POST",
