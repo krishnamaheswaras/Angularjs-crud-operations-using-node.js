@@ -12,7 +12,7 @@ $scope.users = [];
 	//all users
 		$scope.users = response.data.data;
 	},function(error){
-
+	  console.log(error);
 	});
 
 	//add user
